@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #f7b733, #fc4a1a, #4ABDAC, #2E8BC0);
+    background-size: 800% 800%;
+    animation: gradient 20s ease infinite;
+  }
+  
+  @keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  .global-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
+  }
+  
+  .title {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .labels {
+    font-size: 0.9rem;
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .inputs {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .labels-error {
+    color: #ffbaba;
+    font-size: 0.8rem;
+    display: none; /* Se activa desde JS si hay error */
+  }
+  
+  .all-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+  }
+  
+  .buttons,
+  .button-create {
+    padding: 0.6rem 1.2rem;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: white;
+    background-color: #2ecc71;
+    transition: background 0.3s ease;
+  }
+  
+  .buttons:hover,
+  .button-create:hover {
+    background-color: #27ae60;
+  }
+  
+  #button-cancel-login,
+  #button-cancel-register,
+  #button-cancel-request {
+    background-color: #e74c3c;
+  }
+  
+  #button-cancel-login:hover,
+  #button-cancel-register:hover,
+  #button-cancel-request:hover {
+    background-color: #c0392b;
+  }
+  
+  #account-register {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  
+  .labels-register {
+    font-size: 0.85rem;
+  }
+  
+  .button-create {
+    background-color: #3498db;
+    margin-left: 0.5rem;
+  }
+  
+  .button-create:hover {
+    background-color: #2980b9;
+  }
+
+  #form-login{
+    border: 0;
+  }
+
+  #form-register{
+    border: 0;
+  }
+
+  #form-request{
+    border: 0;
+  }
+  

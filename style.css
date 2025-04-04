@@ -1,0 +1,105 @@
+/* Fondo con degradado animado */
+body.main-background {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fbc2eb, #a6c1ee);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* Capa de color translúcido */
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  /* Contenedor principal */
+  .main-container {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  /* Título */
+  .main-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  /* Botones */
+  .menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .main-button {
+    padding: 15px;
+    background-color: #3b3b98;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .main-button:hover {
+    background-color: #575fcf;
+  }
+  
+
+
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#all{
+    position: fixed;
+    display: flex;
+
+    width: 100%;
+    height: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.ir-a{
+    border: 1px solid #CCC;
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+
+    border-radius: 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.login{
+    background-image: url(images/login.png);
+}
+
+.registro{
+    background-image: url(images/registro.png);
+}
+
+.solicitud{
+    background-image: url(images/tarjeta.png);
+}
